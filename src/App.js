@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Pricing from "./pricing";
+import TermAndCondition from "./T&C";
+import Home from "./Home";
 
-function App() {
+// import Developer from "./developer";
+// import Overview from "./doc/overview";
+// import Paylodecheckout from "./doc/paylodecheckout";
+// import Support from "./support";
+// import Billvending from "./billvending";
+import Payment from "./Payment";
+import BillVending from "./BillVending";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/termsofuse" element={<TermAndCondition />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/billvending" element={<BillVending />} />
+        {/* // <Route path="/support" element={<Support />}/>  */}
+        {/* <Route path="/pricing" element={<Pricing />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
