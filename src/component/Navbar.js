@@ -19,14 +19,14 @@ const Navbar = () => {
   });
 
   const handleMouseEnter = () => {
-    setIsDropdownOpen(true);
+    setIsDropdownOpen(!isDropdownOpen);
     console.log("mouse enter");
   };
 
-  const handleMouseLeave = () => {
-    setIsDropdownOpen(false);
-    console.log("mouse leave");
-  };
+  // const handleMouseLeave = () => {
+  //   setIsDropdownOpen(false);
+  //   console.log("mouse leave");
+  // };
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -46,8 +46,8 @@ const Navbar = () => {
         <nav className="hidden  lg:inline-block">
           <ul className="flex flex-row space-x-3 items-center text-[#124072]  gap-[30px]  ">
             <li
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
+              onClick={handleMouseEnter}
+              // onMouseLeave={handleMouseLeave}
               className="cursor-pointer border-b  hover:text-[##990019] hover:border-b hover:border-b-lg hover:border-b-[#124072] py-3"
             >
               Products
@@ -58,7 +58,7 @@ const Navbar = () => {
                 Pricing
               </li>
             </Link>
-            <Link to="http://94.229.79.27:65123/" target="_blank">
+            <Link to="https://docs.paylodeservices.com/" target="_blank" rel="noreferrer">
               <li className="cursor-pointer hover:text-[##990019] border-b  hover:border-b hover:border-b-lg hover:border-b-[#124072] py-3">
                 Developer
               </li>
@@ -156,9 +156,9 @@ const Navbar = () => {
 
       {isDropdownOpen && (
         <div
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          className={`bg-gray-100 absolute left-[200px] rounded-md shadow -bottom-[80px] hidden lg:block min-w-[200px] py-5 px-3 z-10`}
+          // onMouseEnter={handleMouseEnter}
+          // onMouseLeave={handleMouseLeave}
+          className={`bg-gray-100 absolute left-[30%] rounded-md shadow -bottom-[80px] hidden lg:block min-w-[200px] py-5 px-3 z-10`}
         >
           <ul>
             <Link to="/payment">

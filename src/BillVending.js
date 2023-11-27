@@ -12,7 +12,7 @@ const BillVending = () => {
           <h2 className="text-[50px] font-semibold  ">
             Experience the Speed and Convenience of Our Bill Vending Platform
           </h2>
-          <p className="mt-[100px] text-[30px]">
+          <p className="mt-[40px] text-[24px] md:text-[25px] lg:text-[30px]">
             Experience the Speed and Convenience of Our Bill Vending Platform
           </p>
         </div>
@@ -20,18 +20,21 @@ const BillVending = () => {
           <img src="/Rectangle3.png" alt="" />
         </div>
       </section>
-      <div className="bg-[#F3F6F8] px-[100px] py-[100px]">
+      
+      <section className=" bg-[#F3F6F8] w-full  px-[16px]  md:px-[30px] gap-10 items-center lg:px-[100px] py-[20px]  justify-between ">
+      <div className="bg-[#F3F6F8]  ">
         <h1 className="text-[30px] text-center font-bold ">
           Simplify Your Payment Experience
         </h1>
-        <p className="text-left  w-full md:max-w-[50%] mt-5  text-[16px] md:text-[18px]">
+        <p className="text-left  w-full md:max-w-[70%] lg:max-w-[50%] mt-5  text-[16px] md:text-[18px]">
           Take advantage of our cost-effective bill vending packages and enhance
           every aspect of your life. Whether you're a casual internet user or a
           frequent data consumer, we offer budget-friendly bill plans tailored
           to your needs.
         </p>
       </div>
-      <section className=" bg-[#F3F6F8] w-full flex flex-col px-[16px] md:flex-row md:px-[30px] gap-10 items-center lg:px-[100px] py-[20px]  justify-between ">
+      <div className="flex flex-wrap">
+        
         <div className="mt-10 grid grid-cols-1  md:grid-col-1 lg:grid-cols-2 gap-[60px] ">
           <div className="max-w-[500px] bg-[#FFF] rounded-xl shadow-lg px-[50px] py-[40px]  ">
             <h1 className="text-[20px] md:text-[30px] text-center font-bold">
@@ -124,6 +127,7 @@ const BillVending = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
       <section className="bg-[#15487D] w-full flex flex-col justify-center px-[18px]  md:flex-row md:px-[30px]  md:justify-between items-center lg:px-[100px] py-[20px] relative ">
