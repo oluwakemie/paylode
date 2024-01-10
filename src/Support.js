@@ -6,20 +6,22 @@ const Support = () => {
   return (
     <div>
       <Navbar />
-      <section className="bg-[#FFF] w-full flex flex-col px-[16px]  md:flex-row md:px-[30px] justify-center lg:px-[90px] py-[50px]    ">
-        <img src="/front.png" alt="" />
-      </section>
-      <section className="bg-[#FFF] w-full flex flex-col  items-center px-[16px]  md: md:px-[30px] justify-center lg:px-[90px] py-[50px]    ">
-        <h1 className="text-[25px]  text-[#15487D] font-bold md:text-[50px]">
-          Customer support available{" "}
-          <span className="text-[#3BB75E]"> around the clock</span>
-        </h1>
-        <p className="text-[15px] font-semibold text-center md:text-[30px] mt-5">
-          Our unwavering commitment to customer satisfaction means that our
-          dedicated support team is at your service 24/7, ready to assist with
-          any inquiries or worries you may encounter. We deeply value our
-          customers and are always here to help.
-        </p>
+      <section className="bg-[#FFF] w-full flex  px-[16px]  md: md:px-[30px] justify-center lg:px-[90px] py-[50px]    ">
+        <div>
+          <h1 className="text-[24px]  text-[#15487D] font-bold md:text-[50px]">
+            Customer support available{" "}
+            <span className="text-[#3BB75E]"> around the clock</span>
+          </h1>
+          <p className="text-[15px] font-semibold md:text-[18px] mt-5">
+            Our unwavering commitment to customer satisfaction means that our
+            dedicated support team is at your service 24/7, ready to assist with
+            any inquiries or worries you may encounter. We deeply value our
+            customers and are always here to help.
+          </p>
+        </div>
+        <div>
+          <img src="/front.png" alt="" />
+        </div>
       </section>
       <section className="bg-[#15487D] w-full flex flex-col items-center px-[16px]   md:px-[30px] justify-center lg:px-[90px] py-[50px]    ">
         <h1 className="text-[15px]  text-[#fff] font-bold md:text-[30px]">
@@ -44,9 +46,8 @@ const Support = () => {
             class="mt-1 px-[16px] py-[10px] text-[16px] bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 rounded w-full max-w-[600px]"
             placeholder=""
           ></input>{" "}
-          <div className="mt-10">
+          <div className="mt-3 flex flex-col ">
             <label className="text-[16px] font-medium">Second name*</label>{" "}
-            <br />
             <input
               type="text"
               name="text"
@@ -54,8 +55,8 @@ const Support = () => {
               placeholder=""
             ></input>{" "}
           </div>
-          <div className="mt-10">
-            <label className="text-[16px] font-medium">Email</label> <br />
+          <div className="mt-3 flex flex-col ">
+            <label className="text-[16px] font-medium">Email</label>
             <input
               type="text"
               name="text"
@@ -63,9 +64,8 @@ const Support = () => {
               placeholder=""
             ></input>{" "}
           </div>
-          <div className="mt-10">
-            <label className="text-[16px] font-medium">Phone number</label>{" "}
-            <br />
+          <div className="mt-3 flex flex-col ">
+            <label className="text-[16px] font-medium">Phone number</label>
             <input
               type="text"
               name="text"
@@ -134,7 +134,7 @@ const Support = () => {
               id=""
               cols="50"
               rows="5"
-              className="border-slate-300 px-5 py-5 focus:border-sky-500 focus:ring-sky-500 w-full"
+              className="border-slate-300 px-5 py-5 focus:border-sky-500 focus:ring-sky-500 border rounded-md"
             ></textarea>
           </div>
           <div className="mt-5">

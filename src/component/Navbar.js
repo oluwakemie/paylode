@@ -9,6 +9,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [productOption, setProductOption] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOption = () => {
     setProductOption(!productOption);
@@ -17,6 +18,12 @@ const Navbar = () => {
   useEffect(() => {
    
   });
+  const handleModalOpen= () => {
+setIsModalOpen(true)
+  }
+  const handleModalClose= () => {
+    setIsModalOpen(false)
+      }
 
   const handleMouseEnter = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -33,8 +40,12 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
-    <div className="sticky w-full bg-white z-1000 lg:relative shadow ">
+    <div className=" w-full bg-white z-30 sticky shadow  top-0">
       <div className="flex flex-row items-center   justify-between relative px-[30px] md:px-[50px] lg:px-[60px] py-[12px]">
         <Link to="/">
           <img
@@ -46,8 +57,9 @@ const Navbar = () => {
         <nav className="hidden  lg:inline-block">
           <ul className="flex flex-row space-x-3 items-center text-[#124072]  gap-[30px]  ">
             <li
-              onClick={handleMouseEnter}
+              // onClick={handleMouseEnter}
               // onMouseLeave={handleMouseLeave}
+              onMouseEnter={toggleModal} onMouseLeave={toggleModal}
               className="cursor-pointer border-b  hover:text-[##990019] hover:border-b hover:border-b-lg hover:border-b-[#124072] py-3"
             >
               Products
@@ -84,18 +96,18 @@ const Navbar = () => {
         </button>
       </div>
       {showMenu && (
-        <div className="bg-gray-100  right-1 rounded-md shadow -bottom-[320px] lg:hidden w-full py-5 px-3 z-10">
-          <ul className="flex flex-col space-y-8 mb-2 ">
+        <div className="  right-1 rounded-md shadow -bottom-[320px] lg:hidden w-full py-5 px-3 z-10">
+          <ul className="flex flex-col space-y-2 mb-2 ">
             <Link to="/">
-              <li className="cursor-pointer border-b text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
+              <li className="cursor-pointer  text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
                 Home
               </li>
             </Link>
 
-            <li className="cursor-pointer border-b text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
+            <li className="cursor-pointer  text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
               <button
                 onClick={handleOption}
-                className="flex justify-between items-center mb-2 cursor-pointer w-full"
+                className="flex justify-between items-center  cursor-pointer w-full"
               > 
               
                 Products{" "}
@@ -111,11 +123,16 @@ const Navbar = () => {
               </button>
 
               {productOption && (
-                <div className="mt-6">
+                <div className="mt-2">
                   <ul className="flex flex-col gap-y-3">
                     <Link to="/payment">
                       <li className="cursor-pointer border-b text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
                         Payments
+                      </li>
+                    </Link>
+                    <Link to="/paymentlink">
+                      <li className="cursor-pointer border-b text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
+                        Payment Link
                       </li>
                     </Link>
                     <Link to="/billvending">
@@ -129,12 +146,12 @@ const Navbar = () => {
             </li>
 
             <Link to="/pricing">
-              <li className="cursor-pointer border-b text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
+              <li className="cursor-pointer text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
                 Pricing
               </li>
             </Link>
             <Link to="http://94.229.79.27:65123/" target="_blank">
-            <li className="cursor-pointer border-b text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
+            <li className="cursor-pointer  text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
               Developer
             </li>
             </Link>
@@ -154,23 +171,28 @@ const Navbar = () => {
         </div>
       )}
 
-      {isDropdownOpen && (
+      {isModalOpen && (
         <div
-          // onMouseEnter={handleMouseEnter}
-          // onMouseLeave={handleMouseLeave}
-          className={`bg-gray-100 absolute left-[30%] rounded-md shadow -bottom-[80px] hidden lg:block min-w-[200px] py-5 px-3 z-10`}
+        onMouseEnter={handleModalOpen} 
+        onMouseLeave={handleModalClose}
+          className={`bg-gray-100 absolute left-[30%] rounded-md shadow -bottom-[120px] hidden lg:block min-w-[200px] py-5 px-9 z-20`}
         >
-          <ul>
+          <ul className="flex flex-col gap-3">
             <Link to="/payment">
               <li className="cursor-pointer border-b text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
                 Payments
               </li>
-            </Link>
-            <Link to="/billvending">
+            </Link><Link to="/billvending">
               <li className="cursor-pointer border-b text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
                 Bill Vending
               </li>
             </Link>
+            <Link to="/paymentlink">
+              <li className="cursor-pointer border-b text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
+                Payment Link
+              </li>
+            </Link>
+            
           </ul>
         </div>
       )}
