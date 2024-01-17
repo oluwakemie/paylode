@@ -53,12 +53,17 @@ const Home = () => {
             A broad range of payment options{" "}
           </p>
           <div className="mt-4 md:mt-6  flex items-center gap-5">
-            <button className=" py-[10px] px-[20px] bg-[#124072] text-white rounded-lg ">
-              Create an Account
-            </button>
-            <p className=" text-[#fff] cursor-pointer">
-              Contact Us
-            </p>
+            <a
+              href="https://pgmerchants.paylodeservices.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <button className=" py-[10px] px-[20px] bg-[#124072] text-white rounded-lg ">
+                Create an Account
+              </button>
+            </a>
+            <p className=" text-[#fff] cursor-pointer">Contact Us</p>
           </div>
         </div>
         {/* <div className="w-full md:w-[50%] flex justify-center">
@@ -66,9 +71,8 @@ const Home = () => {
         </div> */}
       </section>
       <section className="px-[16px] flex flex-col justify-center gap-10  mt-10 md:flex-row md:px-[30px] lg:px-[90px] ">
-        
         <div className="w-full md:w-[50%] ">
-        <h1 className="text-[20px] md:text-[30px] lg:text-[40px] mb-4 font-semibold">
+          <h1 className="text-[20px] md:text-[30px] lg:text-[40px] mb-4 font-semibold">
             Explore integrated{" "}
             <span className="text-[#3BB75E]">bill vending solutions</span>
           </h1>
@@ -128,9 +132,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-[16px] flex flex-col justify-center gap-10  mt-10 md:flex-row md:px-[30px] lg:px-[90px] ">
+      <section className="px-[16px] flex flex-col justify-center gap-[80px]  mt-10 md:flex-row md:px-[30px] lg:px-[90px] ">
         <div className="w-full md:w-[50%] leading-none ">
-        <h1 className="text-[20px] md:text-[30px] lg:text-[40px] mb-4 font-semibold">
+          <h1 className="text-[20px] md:text-[30px] lg:text-[40px] mb-4 font-semibold">
             Intuitive Payment Gateway system for{" "}
             <span className="text-[#3BB75E]">seamless transactions</span>{" "}
           </h1>
@@ -249,11 +253,10 @@ const Home = () => {
             </button>
           </Link>
         </div>
-        <div className="w-full hidden md:block md:w-[50%] ">
+        <div className="w-full flex flex-col items-center justify-center md:w-[50%] ">
           <div>
-            <img src="payment.png" alt="" className="h-[400px]" />
+            <img src="payment2.png" alt="" className="h-[400px]" />
           </div>
-          
         </div>
       </section>
 
@@ -272,7 +275,7 @@ const Home = () => {
           </p>
 
           <Link to="/billvending">
-              <button className="flex items-center gap-2 pl-[10px] mt-4  hover:text-[#1f5a99] text-[#124072]  ">
+            <button className="flex items-center gap-2 pl-[10px] mt-4  hover:text-[#1f5a99] text-[#124072]  ">
               Read More <FaArrowRightLong />
             </button>
           </Link>
@@ -328,7 +331,6 @@ const Home = () => {
               offer competitive pricing, allowing SMEs to avoid the high costs
               associated with setting up traditional merchant accounts.
             </p>
-  
           </div>
           <div className="w-full md:w-[50%]">
             <img
@@ -353,13 +355,13 @@ const Home = () => {
                 </li>
                 <li>
                   <span className="font-semibold">Global Reach:</span> Large
-                  organizations often operate internationally.Paylode ayment gateway
-                  support multiple currencies and facilitate transactions across
-                  borders, allowing businesses to cater to a global customer
-                  base.
+                  organizations often operate internationally.Paylode ayment
+                  gateway support multiple currencies and facilitate
+                  transactions across borders, allowing businesses to cater to a
+                  global customer base.
                 </li>
                 <li>
-                  <span className="font-semibold">Security:</span> 
+                  <span className="font-semibold">Security:</span>
                   Ensuring secure transactions is paramount. Our gateway
                   implement encryption and security protocols to protect
                   sensitive financial information, reducing the risk of fraud
@@ -380,7 +382,6 @@ const Home = () => {
                 </li>
               </ul>
             </p>
-   
           </div>
           <div className="w-full md:w-[50%]">
             <img
@@ -555,7 +556,7 @@ const Home = () => {
         </h1>
 
         <p className="w-full md:w-[50%] text-[16px] md:text-[18px] ">
-            We take your security seriously. Our advanced encryption technology
+          We take your security seriously. Our advanced encryption technology
           ensures that your sensitive information remains confidential and
           protected against unauthorized access encryption as mandated by the
           payment card industry data security standard (PCIDSS).
