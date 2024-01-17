@@ -7,19 +7,19 @@ const PaymentLink = () => {
     <div class>
       <Navbar />
       {/* hero section */}
-      <section className="w-full relative flex flex-col px-[16px]  md:flex-row md:px-[30px] h-[90vh] items-center lg:px-[90px] py-[20px]  justify-between  ">
+      <section className="w-full relative flex flex-col px-[16px]  md:flex-row md:px-[30px] h-[70vh] md:h-[90vh] items-center lg:px-[90px] py-[40px]  justify-between  ">
         <img
-          src="/curvedVector.png"
+          src="/vector.png"
           alt="curved vector"
           className="absolute right-0 top-0 -z-10 "
         />
         <img
           src="/paymentlinkhero.png"
           alt="payment link hero"
-          className="absolute bottom-0 right-0 h-[450px]"
+          className="absolute bottom-0 right-0 h-[450px] hidden lg:block"
         />
-        <div className="py-10 w-full text-white md:w-[50%]">
-          <h2 className="text-[20px] md:text-[32px] lg:text-[40px] text-[#15487D] font-bold">
+        <div className="py-10 w-full text-white md:w-[60%] lg:w-[50%]">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] text-[#15487D] font-bold">
             Receive Payments Through Simple Payment Links.
           </h2>
           <p className="mt-[20px] text-[#15487D] text-[16px] lg:text-[18px]">

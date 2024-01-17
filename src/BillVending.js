@@ -27,7 +27,7 @@ const BillVending = () => {
             Simplify Your Payment Experience
           </h1>
           <p className="text-left  w-full md:max-w-[70%] lg:max-w-[50%] mt-5  text-[16px] ">
-            Take advantage of our cost-effective bill vending packages and
+            Take advantage of our cost-effective bill vending platform/API and
             enhance every aspect of your life. Whether you're a casual internet
             user or a frequent data consumer, we offer budget-friendly bill
             plans tailored to your needs.
