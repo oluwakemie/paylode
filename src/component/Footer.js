@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { SocialIcon } from 'react-social-icons'
 
 const Footer = () => {
   return (
-    <div className="mt-[50px] px-[16px] sm:px-[30px] md:px-[110px] lg:px-[150px]  py-[100px] bg-[#eceef1] w-full ">
+    <div className="mt-[50px] px-[16px] sm:px-[30px] md:px-[110px] lg:px-[150px]  pt-[100px] bg-[#eceef1] w-full ">
       <div className=" w-full  px-[16px]  md:flex justify-between items-center md:gap-10 ">
         <div className=" md:text-[16px] ">
           Paylode Services Limited enables the smooth <br /> and hassle-free
@@ -52,20 +54,22 @@ const Footer = () => {
             <h4 className="font-bold">Resources</h4>
             <ul className="flex flex-col gap-2">
               {" "}
-              <li className="text-[15px] hover:text-[#124072]">Support</li>
+              <Link><li className="text-[15px] hover:text-[#124072]">Support</li></Link>
+              
             </ul>
           </div>
           <div className="">
             <h4 className="font-bold">Legal</h4>
             <ul className="flex flex-col gap-2">
-              <li className="text-[15px] hover:text-[#124072]">Terms of Use</li>
-              <li className="text-[15px] hover:text-[#124072] ">Privacy Policy</li>
+              <Link to="/termsofuse"><li className="text-[15px] hover:text-[#124072]">Terms of Use</li></Link>
+              
+              <Link to="/termsofuse"> <li className="text-[15px] hover:text-[#124072] ">Privacy Policy</li></Link>
             </ul>
           </div>
           <div className="">
             <ul className="flex flex-col gap-2">
               <li className="font-bold"> Developers</li>
-              <li className="text-[15px] "><a href="http://94.229.79.27:65123/">API Documentation</a></li>
+              <li className="text-[15px] "><a href="https://docs.paylodeservices.com/" target="_blank">API Documentation</a></li>
             </ul>
           </div>
 
@@ -81,6 +85,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="flex justify-between items-center text-[12px] py-5"><p className="text-[12px]">Paylode © {new Date().getFullYear()}  All rights reserved</p><div className="flex items-center gap-1"><SocialIcon bgColor={"transparent"} fgColor="grey" url="https://twitter.com/paylodeservices?s=11" /><SocialIcon bgColor={"transparent"} fgColor="grey" url="https://instagram.com/paylodeserviceslimited?igsh=MzRIODBiNWFIZA==" /><SocialIcon bgColor={"transparent"} fgColor="grey" url="https://linkedin.com/comapny/paylode-services-limited" /></div></div>
     </div>
   );
 };

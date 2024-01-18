@@ -278,7 +278,8 @@ const Pricing = () => {
               )}
             </div>
             {faq4 ? (
-              <p className="py-4 px-5 bg-slate-100">You can send an email to</p>
+              <p className="py-4 px-5 bg-slate-100">You can send an email to sales@paylodeservices.com
+              </p>
             ) : (
               ""
             )}
@@ -307,7 +308,8 @@ const Pricing = () => {
               <p className="py-4 px-5 bg-slate-100 text-justify">
                 Double-check to confirm that the email you entered was accurate.
                 Check your spam/promotion emails. Emails sent from Flutterwave
-                are sent via info@paylode.net Please whitelist this address on
+                are sent via sales@paylodeservices.com
+t Please whitelist this address on
                 your mailbox. <br /> <br /> If you still don't find the email,
                 click the resend email link on your sign-up screen. <br />{" "}
                 <br /> After 3 attempts and waiting for at least an hour, if you
@@ -341,7 +343,7 @@ const Pricing = () => {
             {faq6 ? (
               <p className="py-4 px-5 bg-slate-100 text-justify">
                 Nothing! You can create an account and set it up to receive
-                payments on Paylode completely free. Flutterwave only charges
+                payments on Paylode completely free. Paylode only charges
                 fees per transaction on transfers and payments you receive. You
                 can find more information on Paylode pricing{" "}
                 <a

@@ -252,7 +252,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <Link to="/billvending">
+          <Link to="/payment">
             <button className="flex items-center gap-2 py-[10px] px-[20px] mt-10  hover:text-[#1f5a99] text-[#124072] rounded-lg ">
               Read More <FaArrowRightLong />
             </button>
@@ -260,7 +260,7 @@ const Home = () => {
         </div>
         <div className="w-full flex flex-col items-center justify-center md:w-[50%] ">
           <div>
-            <img src="payment2.png" alt="" className="h-[400px]" />
+            <img src="payment2.png" alt="" className=" h-[300px] md:h-[400px]" />
           </div>
         </div>
       </section>
@@ -279,14 +279,14 @@ const Home = () => {
             and expanding market reach
           </p>
 
-          <Link to="/billvending">
+          <Link to="/paymentlink">
             <button className="flex items-center gap-2 pl-[10px] mt-4  hover:text-[#1f5a99] text-[#124072]  ">
               Read More <FaArrowRightLong />
             </button>
           </Link>
         </div>
         <div>
-          <img src="/Rectangle.png" alt="" />
+          <img src="/Rectangle.png" alt="" className=" h-[300px] md:h-[400px]"  />
         </div>
       </section>
       <section className="px-[16px]  gap-10  mt-10  md:px-[30px] lg:px-[90px]">
@@ -548,9 +548,11 @@ const Home = () => {
             </li>
           </ul>
 
-          <button className="flex items-center gap-2 pl-[10px] mt-4  hover:text-[#1f5a99] text-[#124072]  ">
+          <Link to="http://doc.paylodeservices.com"><button className="flex items-center gap-2 pl-[10px] mt-4  hover:text-[#1f5a99] text-[#124072]  ">
             Read API Docs <FaArrowRightLong />
-          </button>
+          </button></Link>
+
+          
         </div>
         <div className="flex justify-center items-center w-full md:w-[40%]">
           <img src="api.png" />
@@ -691,9 +693,10 @@ const Home = () => {
                 available round the clock to assist you with any queries or
                 concerns you may have.
               </p>
-              <button className="text-white bg-[#124072] py-3 text-center w-full rounded-lg">
+              <Link to="/support">  <button className="text-white bg-[#124072] py-3 text-center w-full rounded-lg">
                 Shoot a direct mail
-              </button>
+              </button></Link>
+            
             </div>
           </div>
         </div>

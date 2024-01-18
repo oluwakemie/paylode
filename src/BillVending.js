@@ -2,12 +2,14 @@ import React from "react";
 import Navbar from "./component/Navbar";
 import GetStarted from "./component/GetStarted";
 import Footer from "./component/Footer";
+import { Link } from "react-router-dom";
+import GetStartedBillVending from "./component/GetStartedBillVending";
 const BillVending = () => {
   return (
     <div>
       <Navbar />
       {/* hero section */}
-      <section className="bg-[#092E55] flex flex-col px-[16px]  md:flex-row md:px-[30px]  items-center lg:px-[100px] py-[40px] md:py-[50px] lg:py-[70px]  justify-between  ">
+      <section className="bg-[#092E55] flex flex-col px-[16px] h-[70vh]  md:flex-row md:px-[30px]  items-center lg:px-[100px] py-[50px] md:py-[50px] lg:py-[70px]  justify-between relative ">
         <div className=" w-full text-white leading-tight md:w-[50%]">
           <h2 className="text-[24px] md:text-[32px] lg:text-[40px] text-[#fff] font-bold">
             Experience the Speed and Convenience of Our Bill Vending Platform
@@ -15,15 +17,30 @@ const BillVending = () => {
           <p className="mt-[10px] text-[18px] md:text-[20px]">
             Experience the Speed and Convenience of Our Bill Vending Platform
           </p>
+
+          <div className="mt-4 md:mt-6  flex items-center gap-5">
+            <a
+              href="https://billvendingclient.paylodeservices.com/login"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <button className=" py-[10px] px-[20px] bg-white text-[#124072] rounded-lg hover:bg-slate-100">
+                Create an Account
+              </button>
+            </a>
+            <Link to="/support"> <p className=" text-[#fff] cursor-pointer">Contact Us</p></Link>
+           
+          </div>
         </div>
-        <img src="/sunglasses.png" alt="" className="" />
+        <img src="/billvendingDashboard.png" alt="" className="h-[300px] md:h-[400px]  absolute right-3  -bottom-[70px] md:bottom-1 rounded-lg  md:block" />
         {/* <div className="w-full md:w-[50%] flex justify-center">
           <img src="/Rectangle3.png" alt="" />
         </div> */}
       </section>
 
       <section className=" bg-[#F3F6F8] w-full  px-[16px]  md:px-[30px] gap-10 items-center lg:px-[100px] py-[20px]  justify-between ">
-        <div className="bg-[#F3F6F8]  pt-10">
+        <div className="bg-[#F3F6F8]  pt-[80px]">
           <h1 className="text-[18px] md:text-[24px] lg:text-[30px] text-center font-bold ">
             Simplify Your Payment Experience
           </h1>
@@ -42,7 +59,7 @@ const BillVending = () => {
             <div className="w-full md:w-[50%]">
               {" "}
               <h1 className="text-[20px] md:text-[30px] font-bold">
-                Electricity Bill
+                Electricity   <span className="text-[#3BB75E]">Bill</span>
               </h1>{" "}
               <p className="text-[16px] md:text-[18px] mt-5 mb-4">
                 We serve you best way to pay your electricity bill instantly and
@@ -194,7 +211,7 @@ const BillVending = () => {
             <div className="w-full md:w-[50%]">
               {" "}
               <h1 className="text-[20px] md:text-[30px] font-bold">
-                AirtimeTop-up
+                Airtime   <span className="text-[#3BB75E]">Top-up</span>
               </h1>{" "}
               <p className="text-[16px] md:text-[18px] mt-5 mb-4">
                 Get airtime from any of the registered Nigerian
@@ -289,7 +306,7 @@ const BillVending = () => {
             <div className="w-full md:w-[50%]">
               {" "}
               <h1 className="text-[20px] md:text-[30px] font-bold">
-                Buy Data Bundle
+                Buy   <span className="text-[#3BB75E]">Data Bundle</span>
               </h1>{" "}
               <p className="text-[16px] md:text-[18px] mt-5 mb-4">
                 Our server is entirely committed to providing data bundles
@@ -377,7 +394,7 @@ const BillVending = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#15487D] w-full flex flex-col justify-center px-[18px]  md:flex-row md:px-[30px]  md:justify-between items-center lg:px-[100px] py-[50px] relative ">
+      {/* <section className="bg-[#15487D] w-full flex flex-col justify-center px-[18px]  md:flex-row md:px-[30px]  md:justify-between items-center lg:px-[100px] py-[50px] relative ">
         <div className="w-full md:max-w-[50%]">
           <h1 className="text-white font-bold text-[30px]">Why Paylode?</h1>
           <div className=" flex items-start gap-2 mt-5 ">
@@ -427,8 +444,8 @@ const BillVending = () => {
           </div>{" "}
         </div>
         <div className="w-full md:max-w-[40%] absolute bottom-0 right-0 hidden md:block "></div>
-      </section>
-      <GetStarted />
+      </section> */}
+      <GetStartedBillVending />
       <Footer />
     </div>
   );

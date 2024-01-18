@@ -10,7 +10,7 @@ const Paylodecheckout = () => {
       <Navbar />
       <section className="bg-[#092E55]  w-full flex flex-col px-[16px]  md:flex-row md:px-[30px]  items-center lg:px-[90px] py-[20px]  justify-between  ">
         <div className="py-10 w-full text-white md:w-[50%]">
-          <h2 className="text-[50px] font-bold">
+          <h2 className=" text-[30px] md:text-[40px] lg:text-[50px]  font-bold">
             Embrace the Future with our payment gateway
           </h2>
           <div className="flex gap-1 mt-3">

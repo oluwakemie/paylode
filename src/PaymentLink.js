@@ -7,7 +7,7 @@ const PaymentLink = () => {
     <div class>
       <Navbar />
       {/* hero section */}
-      <section className="w-full relative flex flex-col px-[16px]  md:flex-row md:px-[30px] h-[70vh] md:h-[90vh] items-center lg:px-[90px] py-[40px]  justify-between  ">
+      <section className="w-full relative flex flex-col px-[16px]  md:flex-row md:px-[30px]  md:h-[90vh] items-center lg:px-[90px] py-[40px]  justify-between  ">
         <img
           src="/vector.png"
           alt="curved vector"
@@ -28,15 +28,19 @@ const PaymentLink = () => {
           </p>
 
           <div className="mt-4 md:mt-4 flex items-center gap-5">
+          <a
+              href="https://pgmerchants.paylodeservices.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
             <button className=" py-[10px] px-[20px] bg-[#124072] text-white rounded-lg ">
               Get Started
             </button>
+            </a>
           </div>
         </div>
-        <div className="w-full md:w-[50%] flex justify-center">
-          {/* <img src="/Rectangle1.png" alt="" className="" /> */}
-        </div>
-        <div className=""></div>
+        
+  
       </section>
       {/* no website no worry section */}
       <section className="bg-white w-full flex flex-col-reverse px-[16px]  md:flex-row md:px-[30px]  lg:px-[90px] py-[20px]  justify-between items-center pt-10 md:pt-[60px]">

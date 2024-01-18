@@ -153,7 +153,7 @@ const Navbar = () => {
                 Pricing
               </li>
             </Link>
-            <Link to="http://94.229.79.27:65123/" target="_blank">
+            <Link to="http://doc.paylodeservices.com" target="_blank">
               <li className="cursor-pointer  text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
                 Developer
               </li>
