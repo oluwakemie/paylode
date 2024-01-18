@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { SocialIcon } from 'react-social-icons'
 
 const Footer = () => {
   return (
-    <div className="mt-[50px] px-[16px] sm:px-[30px] md:px-[110px] lg:px-[150px]  py-[100px] bg-[#D2D6DA] w-full ">
+    <div className="mt-[50px] px-[16px] sm:px-[30px] md:px-[110px] lg:px-[150px]  pt-[100px] bg-[#eceef1] w-full ">
       <div className=" w-full  px-[16px]  md:flex justify-between items-center md:gap-10 ">
-        <div className=" text-[20px]  text-[#15487D]">
+        <div className=" md:text-[16px] ">
           Paylode Services Limited enables the smooth <br /> and hassle-free
           reception and processing of payments <br /> from individuals and
           businesses worldwide
@@ -23,49 +25,67 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-[100px] flex flex-col sm:flex-row gap-[30px] md:gap-[40px] lg:gap-[50px] ">
-        <img src="/paylodelogo.png" alt="" className="lg:h-[45px] h-[38px] object-contain " />
+        <img
+          src="/paylodelogo.png"
+          alt=""
+          className="lg:h-[45px] h-[38px] object-contain "
+        />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[30px] md:gap-[40px] lg:gap-[50px]">
-          <div className="mb-5">
-            <h4 className="font-bold text-[20px] mb-2">Products</h4>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[10px] md:gap-[30px] lg:gap-[50px]">
+          <div className="">
+            <h4 className="font-bold text-[20px] mb-2 ">Products</h4>
             <ul className="flex flex-col gap-2">
-              <li className="text-[15px] ">Billvending</li>
-              <li className="text-[15px] ">Payment Link</li>
-              <li className="text-[15px] ">Checkout</li>
-              <li className="text-[15px] ">Pricing</li>
+              <li className="text-[15px] hover:text-[#124072] ">
+                {" "}
+                <a href="/billvending">Billvending</a>
+              </li>
+              <li className="text-[15px] hover:text-[#124072]">
+                {" "}
+                <a href="/paymentlink">Payment Link</a>{" "}
+              </li>
+              <li className="text-[15px] hover:text-[#124072] ">Checkout</li>
+              <li className="text-[15px] hover:text-[#124072]">
+                {" "}
+                <a href="/pricing">Pricing</a>
+              </li>
             </ul>
           </div>
-          <div className="mb-5">
+          <div className="">
             <h4 className="font-bold">Resources</h4>
             <ul className="flex flex-col gap-2">
               {" "}
-              <li className="text-[15px] ">Support</li>
+              <Link><li className="text-[15px] hover:text-[#124072]">Support</li></Link>
+              
             </ul>
           </div>
-          <div className="mb-5">
+          <div className="">
             <h4 className="font-bold">Legal</h4>
             <ul className="flex flex-col gap-2">
-              <li className="text-[15px] ">Terms of Use</li>
-              <li className="text-[15px] ">Privacy Policy</li>
+              <Link to="/termsofuse"><li className="text-[15px] hover:text-[#124072]">Terms of Use</li></Link>
+              
+              <Link to="/termsofuse"> <li className="text-[15px] hover:text-[#124072] ">Privacy Policy</li></Link>
             </ul>
           </div>
-          <div className="mb-5">
+          <div className="">
             <ul className="flex flex-col gap-2">
-              <li className="font-bold">Developers</li>
-              <li className="text-[15px] ">API Documentation</li>
+              <li className="font-bold"> Developers</li>
+              <li className="text-[15px] "><a href="https://docs.paylodeservices.com/" target="_blank">API Documentation</a></li>
             </ul>
           </div>
 
-          <div className="mb-5">
+          <div className="">
             <h4 className="font-bold">Contact</h4>
             <ul className="flex flex-col gap-2">
               {" "}
-              <li className="text-[15px] whitespace-nowrap ">+234-808-381-0030</li>
+              <li className="text-[15px] whitespace-nowrap ">
+                +234-808-381-0030
+              </li>
               <li className="text-[15px] ">sales@paylodeservices.com</li>
             </ul>
           </div>
         </div>
       </div>
+      <div className="flex justify-between items-center text-[12px] py-5"><p className="text-[12px]">Paylode © {new Date().getFullYear()}  All rights reserved</p><div className="flex items-center gap-1"><SocialIcon bgColor={"transparent"} fgColor="grey" url="https://twitter.com/paylodeservices?s=11" /><SocialIcon bgColor={"transparent"} fgColor="grey" url="https://instagram.com/paylodeserviceslimited?igsh=MzRIODBiNWFIZA==" /><SocialIcon bgColor={"transparent"} fgColor="grey" url="https://linkedin.com/comapny/paylode-services-limited" /></div></div>
     </div>
   );
 };
