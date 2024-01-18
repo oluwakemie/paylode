@@ -23,36 +23,49 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-[100px] flex flex-col sm:flex-row gap-[30px] md:gap-[40px] lg:gap-[50px] ">
-        <img src="/paylodelogo.png" alt="" className="lg:h-[45px] h-[38px] object-contain " />
+        <img
+          src="/paylodelogo.png"
+          alt=""
+          className="lg:h-[45px] h-[38px] object-contain "
+        />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[10px] md:gap-[30px] lg:gap-[50px]">
           <div className="">
-            <h4 className="font-bold text-[20px] mb-2">Products</h4>
+            <h4 className="font-bold text-[20px] mb-2 ">Products</h4>
             <ul className="flex flex-col gap-2">
-              <li className="text-[15px] ">Billvending</li>
-              <li className="text-[15px] ">Payment Link</li>
-              <li className="text-[15px] ">Checkout</li>
-              <li className="text-[15px] ">Pricing</li>
+              <li className="text-[15px] hover:text-[#124072] ">
+                {" "}
+                <a href="/billvending">Billvending</a>
+              </li>
+              <li className="text-[15px] hover:text-[#124072]">
+                {" "}
+                <a href="/paymentlink">Payment Link</a>{" "}
+              </li>
+              <li className="text-[15px] hover:text-[#124072] ">Checkout</li>
+              <li className="text-[15px] hover:text-[#124072]">
+                {" "}
+                <a href="/pricing">Pricing</a>
+              </li>
             </ul>
           </div>
           <div className="">
             <h4 className="font-bold">Resources</h4>
             <ul className="flex flex-col gap-2">
               {" "}
-              <li className="text-[15px] ">Support</li>
+              <li className="text-[15px] hover:text-[#124072]">Support</li>
             </ul>
           </div>
           <div className="">
             <h4 className="font-bold">Legal</h4>
             <ul className="flex flex-col gap-2">
-              <li className="text-[15px] ">Terms of Use</li>
-              <li className="text-[15px] ">Privacy Policy</li>
+              <li className="text-[15px] hover:text-[#124072]">Terms of Use</li>
+              <li className="text-[15px] hover:text-[#124072] ">Privacy Policy</li>
             </ul>
           </div>
           <div className="">
             <ul className="flex flex-col gap-2">
-              <li className="font-bold">Developers</li>
-              <li className="text-[15px] ">API Documentation</li>
+              <li className="font-bold"> Developers</li>
+              <li className="text-[15px] "><a href="http://94.229.79.27:65123/">API Documentation</a></li>
             </ul>
           </div>
 
@@ -60,7 +73,9 @@ const Footer = () => {
             <h4 className="font-bold">Contact</h4>
             <ul className="flex flex-col gap-2">
               {" "}
-              <li className="text-[15px] whitespace-nowrap ">+234-808-381-0030</li>
+              <li className="text-[15px] whitespace-nowrap ">
+                +234-808-381-0030
+              </li>
               <li className="text-[15px] ">sales@paylodeservices.com</li>
             </ul>
           </div>

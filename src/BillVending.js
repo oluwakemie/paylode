@@ -9,13 +9,14 @@ const BillVending = () => {
       {/* hero section */}
       <section className="bg-[#092E55] flex flex-col px-[16px]  md:flex-row md:px-[30px]  items-center lg:px-[100px] py-[40px] md:py-[50px] lg:py-[70px]  justify-between  ">
         <div className=" w-full text-white leading-tight md:w-[50%]">
-        <h2 className="text-[24px] md:text-[32px] lg:text-[40px] text-[#fff] font-bold">
+          <h2 className="text-[24px] md:text-[32px] lg:text-[40px] text-[#fff] font-bold">
             Experience the Speed and Convenience of Our Bill Vending Platform
           </h2>
           <p className="mt-[10px] text-[18px] md:text-[20px]">
             Experience the Speed and Convenience of Our Bill Vending Platform
           </p>
         </div>
+        <img src="/sunglasses.png" alt="" className="" />
         {/* <div className="w-full md:w-[50%] flex justify-center">
           <img src="/Rectangle3.png" alt="" />
         </div> */}
@@ -425,9 +426,7 @@ const BillVending = () => {
             </p>
           </div>{" "}
         </div>
-        <div className="w-full md:max-w-[40%] absolute bottom-0 right-0 hidden md:block ">
-          <img src="/sunglasses.png" alt="" className="" />
-        </div>
+        <div className="w-full md:max-w-[40%] absolute bottom-0 right-0 hidden md:block "></div>
       </section>
       <GetStarted />
       <Footer />

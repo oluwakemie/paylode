@@ -40,8 +40,8 @@ const PaymentLink = () => {
       </section>
       {/* no website no worry section */}
       <section className="bg-white w-full flex flex-col-reverse px-[16px]  md:flex-row md:px-[30px]  lg:px-[90px] py-[20px]  justify-between items-center pt-10 md:pt-[60px]">
-        <div className="w-full md:w-[50%]">
-          <img src="/Rectangle.png" alt="" className="w-[550px]" />
+        <div className="w-full md:w-[50%] flex justify-center items-center">
+          <img src="/Rectangle.png" alt="" className=" h-[250px] md:h-[350px] " />
         </div>
         <div className="w-full  md:w-[50%] ">
           <h4 className="text-[#15487D] text-[20px] md:text-[22px] lg:text-[28px] font-bold">
@@ -60,7 +60,7 @@ const PaymentLink = () => {
         </div>
       </section>
 
-      <section className="bg-white w-full flex flex-col-reverse px-[16px]  md:flex-row md:px-[30px]  lg:px-[90px] py-[20px]  justify-between items-center pt-10 md:pt-[60px]">
+      <section className="bg-white w-full flex flex-col px-[16px] gap-8  md:flex-row md:px-[30px]  lg:px-[90px] py-[20px]  justify-between items-center pt-10 md:pt-[60px] ">
       <div className="w-full  md:w-[50%] ">
           <h4 className="text-[#15487D] text-[20px] md:text-[22px] lg:text-[28px] font-bold">
             Monitor and Keep Records Of Payment Status
@@ -76,7 +76,7 @@ const PaymentLink = () => {
             transaction
           </p>
         </div>
-        <div className="w-full md:w-[50%]">
+        <div className="w-full md:w-[50%] ">
           <img src="/tracking.png" alt="" className="w-[550px]" />
         </div>
        
@@ -84,7 +84,7 @@ const PaymentLink = () => {
       {/* <section className="bg-gray-100 w-full md:flex-row md:px-[30px]  lg:px-[90px] py-[20px] justify-center">
         <img src="/man.png" alt="" className="" />
       </section> */}
-      <section className="  md:flex-row md:px-[30px]  lg:px-[90px] py-[20px]  w-full">
+      <section className="  md:flex-row px-4 md:px-[30px]  lg:px-[90px] py-[20px]  w-full">
         <div className=" grid grid-cols-1  md:grid-col-3 lg:grid-cols-3 gap-[40px] md:gap-[60px]  ">
           <div className="w-full  ">
             <p className="w-[32px] h-[32px]  md:w-[48px] md:h-[48px]  flex justify-center items-center font-bold text-[18px] md:text-[24px] text-[#15487D] rounded-full bg-[#15487D4D] mb-2 ">
@@ -123,9 +123,9 @@ const PaymentLink = () => {
           </div>
         </div>
       </section>
-      <section className="bg-white w-full flex flex-col-reverse px-[16px]  md:flex-row md:px-[30px]  lg:px-[90px] py-[20px]  justify-between items-center pt-10 md:pt-[60px]">
+      <section className="bg-white w-full flex flex-col-reverse px-[16px] gap-8  md:flex-row md:px-[30px]  lg:px-[90px] py-[20px]  justify-between items-center pt-10 md:pt-[60px]">
         <div className="w-full md:w-[50%] flex justify-center items-center">
-          <img src="/paycode.png" alt="" className="h-[400px]" />
+          <img src="/paycode.png" alt="" className="h-[250px] md:h-[350px]" />
         </div>
         <div className="w-full md:w-[50%] ">
           <h4 className="text-[#15487D] text-[20px] md:text-[22px] lg:text-[28px] font-bold">

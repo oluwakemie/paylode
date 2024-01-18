@@ -53,9 +53,16 @@ const Home = () => {
             A broad range of payment options{" "}
           </p>
           <div className="mt-4 md:mt-6  flex items-center gap-5">
-            <button className=" py-[10px] px-[20px] bg-[#124072] text-white rounded-lg ">
-              Create an Account
-            </button>
+            <a
+              href="https://pgmerchants.paylodeservices.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <button className=" py-[10px] px-[20px] bg-[#124072] text-white rounded-lg ">
+                Create an Account
+              </button>
+            </a>
             <p className=" text-[#fff] cursor-pointer">Contact Us</p>
           </div>
         </div>
@@ -66,8 +73,8 @@ const Home = () => {
       <section className="px-[16px] flex flex-col justify-center gap-10  mt-10 md:flex-row md:px-[30px] lg:px-[90px] ">
         <div className="w-full md:w-[50%] ">
           <h1 className="text-[20px] md:text-[30px] lg:text-[40px] mb-4 font-semibold">
-            Explore Integrated{" "}
-            <span className="text-[#3BB75E]">Bill Vending Solutions</span>
+            Explore integrated{" "}
+            <span className="text-[#3BB75E]">bill vending solutions</span>
           </h1>
           <p className="text-[18px] ">
             Leverage on bill vending solutions so you can spend less time
@@ -130,11 +137,11 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-[16px] flex flex-col justify-center gap-10  mt-10 md:flex-row md:px-[30px] lg:px-[90px] ">
+      <section className="px-[16px] flex flex-col justify-center gap-[80px]  mt-10 md:flex-row md:px-[30px] lg:px-[90px] ">
         <div className="w-full md:w-[50%] leading-none ">
           <h1 className="text-[20px] md:text-[30px] lg:text-[40px] mb-4 font-semibold">
-            Intuitive Payment Gateway System For{" "}
-            <span className="text-[#3BB75E]">Seamless Transactions</span>{" "}
+            Intuitive Payment Gateway system for{" "}
+            <span className="text-[#3BB75E]">seamless transactions</span>{" "}
           </h1>
           <p className="leading-relaxed text-[18px]  ">
             With our secure and reliable payment gateway, you can accept
@@ -251,9 +258,9 @@ const Home = () => {
             </button>
           </Link>
         </div>
-        <div className="w-full hidden md:block md:w-[50%] ">
+        <div className="w-full flex flex-col items-center justify-center md:w-[50%] ">
           <div>
-            <img src="payment.png" alt="" className="h-[400px]" />
+            <img src="payment2.png" alt="" className="h-[400px]" />
           </div>
         </div>
       </section>

@@ -33,7 +33,7 @@ const Paylodecheckout = () => {
       </section>
       <section className=" w-full  px-[16px]  md:px-[30px] flex flex-col md:flex-row   items-center lg:px-[90px]  pt-[40px] md:pt-[60px] lg:pt-[80px] justify-between  ">
         <div className="w-full md:w-[50%]">
-          <h1 className="text-[40px] mb-4 font-semibold w-full ">
+          <h1 className="text-[20px] md:text-[32px] lg:text-[40px] mb-4 font-semibold w-full ">
             Payment Gateway system for{" "}
             <span className="text-[#3BB75E]">seamless transactions</span>{" "}
           </h1>
@@ -57,7 +57,7 @@ const Paylodecheckout = () => {
         <div className="w-full md:w-[50%]">
           {" "}
           <div>
-            <h1 className="text-[40px] mb-4 font-semibold w-full ">
+            <h1 className="text-[20px] md:text-[32px] lg:text-[40px] mb-4 font-semibold w-full ">
               Expands Payment Options
             </h1>
           </div>
@@ -132,7 +132,7 @@ const Paylodecheckout = () => {
       </section>
       <section className=" w-full  px-[16px] flex flex-col md:flex-row  md:px-[30px]  items-center lg:px-[90px]  pt-[40px] md:pt-[60px] lg:pt-[80px] justify-between  ">
         <div className="w-full md:w-[50%]">
-          <h1 className="text-[40px] mb-4 font-semibold w-full ">
+          <h1 className="text-[20px] md:text-[32px] lg:text-[40px] mb-4 font-semibold w-full ">
             Simple Integration and
             <span className="text-[#3BB75E]"> Seamless Payment</span>
           </h1>

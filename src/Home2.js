@@ -21,9 +21,16 @@ const Home = () => {
             A broad range of payment options{" "}
           </p>
           <div className="mt-4 md:mt-6 lg:mt-10 flex items-center gap-5">
-            <button className=" py-[10px] px-[20px] bg-[#124072] text-white rounded-lg ">
-              Create an Account
-            </button>
+            <a
+              href="https://pgmerchants.paylodeservices.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <button className=" py-[10px] px-[20px] bg-[#124072] text-white rounded-lg ">
+                Create an Account
+              </button>
+            </a>
             <p className="font-semibold text-[#124072] md:text-[#fff] cursor-pointer">
               Contact Us
             </p>
@@ -48,7 +55,13 @@ const Home = () => {
           </p>
           <div className="mt-4 md:mt-6 lg:mt-10 flex items-center gap-5">
             <button className=" py-[10px] px-[20px] bg-[#124072] text-white rounded-lg ">
-              Create an Account
+              <a
+                href="https://pgmerchants.paylodeservices.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Create an Account
+              </a>
             </button>
             <p className="font-semibold text-[#124072] md:text-[#fff] cursor-pointer">
               Contact Us
